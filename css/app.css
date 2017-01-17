@@ -8,7 +8,9 @@
 header {}
 body {background-color: #D6FFED; font-family: 'Open Sans', sans-serif;}
 figcaption {font-family: 'Open Sans', sans-serif;}
-nav {}
+nav a{
+  color: #FF147E;
+}
 footer {position: fixed;
         bottom:0;}
 
