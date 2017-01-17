@@ -7,14 +7,25 @@
 h1, h6 {font-family: cursive;}
 
 header {}
-header h1 {color:red; background-color:yellow;}
+body {background-color: #D6FFED; font-family: 'Open Sans', sans-serif;}
+figcaption {font-family: 'Open Sans', sans-serif;}
 nav {}
 footer {}
 
+  .imageContainer{
+        position: absolute;
+        width: 300px; /*the image width*/
+        height: 172px; /*the image height*/
+        left: 44%;
+        top: 5%;
+        margin-left: -50px; /*half the image width*/
+        margin-top: -10px; /*half the image height*/
+    }
 
 
 
-* {outline: 1px solid red;}
+
+
 
 /* header styles */
 
