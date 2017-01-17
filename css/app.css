@@ -4,13 +4,13 @@
 /* main body styles */
 /* footer styles */
 
-h1, h6 {font-family: cursive;}
 
 header {}
 body {background-color: #D6FFED; font-family: 'Open Sans', sans-serif;}
 figcaption {font-family: 'Open Sans', sans-serif;}
 nav {}
-footer {}
+footer {position: fixed;
+        bottom:0;}
 
   .imageContainer{
         position: absolute;
@@ -21,7 +21,8 @@ footer {}
         margin-left: -50px; /*half the image width*/
         margin-top: -10px; /*half the image height*/
     }
-
+.center {text-align: center;
+        margin-top: 200px;}
 
 
 
