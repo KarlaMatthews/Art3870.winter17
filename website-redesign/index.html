@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Page Title</title>
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+
+
+</head>
+
+
+<body>
+
+
+
+  <div class="transbox">
+
+        <figure class="columns small-12">
+
+  <img data-interchange="
+  [images/jtbusinesscard.jpg, small],
+  [images/jtbusinesscard.jpg, medium],
+  [images/jtbusinesscard.jpg, large]">
+
+        </figure>
+
+    </div>
+
+    <nav>
+        <a href="index.html" class="column small-12 medium-2 large-1"> Home </a>
+        <a href="specials.html" class="column small-12 medium-2 large-1"> Daily Specials </a>
+        <a href="party.html" class="column small-12 medium-2 large-1"> Groups & Parties </a>
+    </nav>
+
+
+
+<h1>Welcome to the Manor Bowl website!</h1>
+
+
+<!-- Orbit Slide -->
+  <div class="row">
+    <div class="orbit" role="region" aria-label="manor bowl" data-orbit data-options=
+    "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+
+  <ul class="orbit-content" data-orbit>
+    <li data-orbit-slide="headline-1">
+      <div>
+          <img src="images/ballpin.jpg">
+          <div class="orbit-caption">Welcome to Manor Bowl!</div>
+      </div>
+    </li>
+    <li data-orbit-slide="headline-2">
+      <div>
+          <img src="images/ballreturn.jpg">
+          <div class="orbit-caption">Welcome to Manor Bowl!</div>
+      </div>
+    </li>
+    <li data-orbit-slide="headline-3">
+      <div>
+          <img src="images/ballpin.jpg">
+          <div class="orbit-caption">Welcome to Manor Bowl!</div>
+      </div>
+    </li>
+  </ul>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0"> </button>
+    <button data-slide="1"></button>
+    <button data-slide="2"></button>
+    <button data-slide="3"></button>
+  </nav>
+</div>
+</div>
+
+
+
+<p> Welcome to Manor Bowl! We are a family-owned bowling alley that opened in XXXX and we always
+  <br> want to provide the best customer service.
+Located in the Manor of San Leandro, CA, we centrally located for all to come by and have fun bowling!
+  <br> We have the best rates for bowling within the area by offering daily specials EVERYDAY.
+  <br> Also for those who want to have birthday parties here, we offer special rates for you.
+  <br> For all of the information for birthday and daily special rates, you may look on this website by clicking on the links
+  <br> labeled "Specials" and "Birthday".
+</p>
+
+
+<?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+<!--    <?php
+    }
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+        }
+    else{
+        $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("youremail@yoursite.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }
+?>
+-->
+
+
+
+
+
+
+<div class="center">
+<script type="text/javascript">
+    var d = new Date();
+    var time = d.getHours();
+
+    if (time < 12)
+      {
+        document.write("<b>Good Morning.</b>");
+      }
+
+    if (time > 12)
+      {
+        document.write("<b>Good Afternoon.</b>");
+      }
+
+    if (time > 17)
+      {
+        document.write("<b>Good Evening.</b>");
+      }
+</script>
+</div>
+
+<footer class="row">
+<h6>copyright 2017 all rights reserved</h6>
+</footer>
+
+</div>
+
+
+</html>
