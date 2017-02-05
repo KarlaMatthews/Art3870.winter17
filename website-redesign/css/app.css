@@ -3,14 +3,13 @@ body {
   background-color: #576487;
 }
 
-nav a {
+nav a{
   color: #000000;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 
 div.transbox {
-  margin: 30px;
+  /*margin: 30px;*/
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.6;
@@ -18,8 +17,36 @@ div.transbox {
 }
 
 div.transbox p {
-  margin: 5%;
+  /*margin: 5%;*/
   font-weight: bold;
   color: #000000;
   font-family: 'Open Sans', sans-serif;
+}
+
+div.ballsimg {
+  display: block;
+  margin-left: 650px;
+}
+
+div.dailyspecials {
+  text-align: center;
+  font-size: 45px;
+}
+
+div.days {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+div.time {
+  font-size: 20px;
+}
+
+div.extra {
+  font-style: italic;
+}
+
+div.groupon {
+  font-weight: bold;
+  text-align: center;
 }

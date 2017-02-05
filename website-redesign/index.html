@@ -16,72 +16,73 @@
 
 
 
-  <div class="transbox">
+  <div class="transbox row">
     <img src="images/logofinal.jpg">
-    <nav align= center>
-      <h3>
+    <nav align="center">
+      <!-- <h3> -->
       <a href="index.html" class="column small-12 medium-2 large-1"> Home </a>
       <a href="specials.html" class="column small-12 medium-2 large-1"> Daily Specials </a>
-      <a href="party.html" class="column small-12 medium-2 large-1"> Groups & Parties</a>
-    </h3>
-    </nav>
+      <a href="party.html" class="column small-12 medium-2 large-1"> Groups &amp; Parties</a>
+    <!-- </h3> -->
+    <!--</nav>-->
   </div>
 
 
-<h1>Welcome to the Manor Bowl website!</h1>
-
-
 <!-- Orbit Slide -->
-  <div class="transbox">
-    <div class="orbit" role="region" aria-label="manor bowl" data-orbit data-options=
-    "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
 
-  <ul class="orbit-content" data-orbit>
-    <li data-orbit-slide="headline-1">
-      <div>
-          <img src="images/ballpin.jpg">
-          <div class="orbit-caption">Welcome to Manor Bowl!</div>
-      </div>
+
+
+  <div class="transbox">
+
+
+</div>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <ul class="orbit-container">
+    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    <li class="is-active orbit-slide">
+      <img class="orbit-image" src="images/lanes.jpg" alt="bowling lanes">
+      <figcaption class="orbit-caption">Welcome to Manor Bowl.</figcaption>
     </li>
-    <li data-orbit-slide="headline-2">
-      <div>
-          <img src="images/ballreturn.jpg">
-          <div class="orbit-caption">Welcome to Manor Bowl!</div>
-      </div>
+    <li class="orbit-slide">
+      <img class="orbit-image" src="images/ballreturn.jpg" alt="bowling">
+      <figcaption class="orbit-caption">Ready to bowl?</figcaption>
     </li>
-    <li data-orbit-slide="headline-3">
-      <div>
-          <img src="images/ballpin.jpg">
-          <div class="orbit-caption">Welcome to Manor Bowl!</div>
-      </div>
+    <li class="orbit-slide">
+      <img class="orbit-image" src="images/ballpin.jpg" alt="bowling ball">
+      <figcaption class="orbit-caption">Let's Roll!</figcaption>
     </li>
   </ul>
   <nav class="orbit-bullets">
-    <button class="is-active" data-slide="0"> </button>
-    <button data-slide="1"></button>
-    <button data-slide="2"></button>
-    <button data-slide="3"></button>
+    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
   </nav>
 </div>
-</div>
-
-
-
+<div class="transbox">
 <p> Welcome to Manor Bowl! We are a family-owned bowling alley that opened in XXXX and we always
   <br> want to provide the best customer service.
-Located in the Manor of San Leandro, CA, we centrally located for all to come by and have fun bowling!
+<br>
+  <br>Located in the Manor of San Leandro, CA, we centrally located for all to come by and have fun bowling!
+<br>
   <br> We have the best rates for bowling within the area by offering daily specials EVERYDAY.
+<br>
   <br> Also for those who want to have birthday parties here, we offer special rates for you.
-  <br> For all of the information for birthday and daily special rates, you may look on this website by clicking on the links
+<br>
+  <br> For all of the information for birthday and daily special rates,
+  <br> you may look on this website by clicking on the links
   <br> labeled "Specials" and "Birthday".
 </p>
 
+</div>
 
-<?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
+<!--<php
+$action=$_REQUEST[action];
+if ($action="/my-handling-form-page")    /*> display the contact form */>
     {
     ?>
+  -->
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
     Your name:<br>
@@ -113,38 +114,15 @@ else                /* send the submitted data */
 ?>
 -->
 
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
 
-
-
-
-
-<div class="center">
-<script type="text/javascript">
-    var d = new Date();
-    var time = d.getHours();
-
-    if (time < 12)
-      {
-        document.write("<b>Good Morning.</b>");
-      }
-
-    if (time > 12)
-      {
-        document.write("<b>Good Afternoon.</b>");
-      }
-
-    if (time > 17)
-      {
-        document.write("<b>Good Evening.</b>");
-      }
-</script>
-</div>
-
+</body>
 <footer class="row">
 <h6>copyright 2017 all rights reserved</h6>
 </footer>
-
-</div>
 
 
 </html>
