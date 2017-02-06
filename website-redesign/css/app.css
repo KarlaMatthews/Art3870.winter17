@@ -1,4 +1,3 @@
-
 body {
   background-color: #576487;
 }
@@ -54,4 +53,24 @@ div.extra {
 div.groupon {
   font-weight: bold;
   text-align: center;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+section {
+  float: left;
+  margin: 0 0.5%;
+  width: 60%;
 }
