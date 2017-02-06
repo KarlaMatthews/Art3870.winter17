@@ -28,6 +28,11 @@ div.ballsimg {
   margin-left: 650px;
 }
 
+div.partyimg {
+  display: block;
+  margin-left: 550px;
+}
+
 div.dailyspecials {
   text-align: center;
   font-size: 45px;
