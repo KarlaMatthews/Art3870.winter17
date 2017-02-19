@@ -1,0 +1,79 @@
+<!doctype html>
+
+<head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/app.css">
+
+<title> Animations </title>
+
+<style>
+
+#shadow1 {
+  /*border: 1px solid red;*/
+  height: 51px;
+  width: 51px;
+  background: url("images/shadow.png") 0 0 no-repeat;
+  animation: shadow1 1s steps(12) infinite;
+}
+
+@keyframes shadow1 {
+  100% {background-position: -595px; }
+}
+
+#shadow2 {
+  /*border: 1px solid red;*/
+  height: 50px;
+  width: 50px;
+  background: url("images/shadow2.png") 0 0 no-repeat;
+  animation: shadow2 1s steps(6) infinite;
+}
+
+@keyframes shadow2 {
+  100% {background-position: -300px; }
+}
+
+#shadow3 {
+  /*border: 1px solid red;*/
+  height: 60px;
+  width: 52px;
+  background: url("images/shadow3.png") 0 0 no-repeat;
+  animation: shadow3 1s steps(6) infinite;
+}
+
+@keyframes shadow3 {
+  100% {background-position: -300px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="text">
+  THE ARTIST MANIFESTO
+  <p>What our art means
+  <p>1986
+  <p>Gilbert and George
+  </div>
+
+  <nav>
+    <a href="../index.html"> homepage </a>
+    <a href="hover.html"> hover </a>
+    <a href="animation.html"> animation </a>
+    <a href="sprite.html"> sprite </a>
+  </nav>
+
+<div id="shadow1">
+</div>
+
+<div id="shadow2">
+</div>
+
+<div id="shadow3">
+</div>
+
+</body>
+
+
+</html>

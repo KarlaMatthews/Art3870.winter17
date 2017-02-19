@@ -1,0 +1,63 @@
+<!doctype html>
+
+<head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/app.css">
+
+<title> Animations </title>
+
+<style>
+
+#animation {
+    width: 700px;
+    height: 500px;
+    background: url("images/southafrica.png") 0 0 no-repeat;
+    -webkit-animation-name: gilbertgeorge; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: gilbergeorge;
+    animation-duration: 5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes gilbergeorge {
+  from {background: url("images/southafrica.png");}
+  to {background: url("images/fates.png");}
+}
+
+/* Standard syntax */
+@keyframes gilbergeorge {
+    from {background: url("images/southafrica.png");}
+    to {background: url("images/fates.png");}
+}
+
+</style>
+</head>
+
+<body>
+
+  <div id="text">
+    THE ARTIST MANIFESTO
+    <p>What our art means
+    <p>1986
+    <p>Gilbert and George
+    </div>
+
+  <nav>
+    <a href="../index.html"> homepage </a>
+    <a href="hover.html"> hover </a>
+    <a href="animation.html"> animation </a>
+    <a href="sprite.html"> sprite </a>
+  </nav>
+
+<div id="animation">
+</div>
+
+
+
+
+
+</body>
+
+
+</html>
