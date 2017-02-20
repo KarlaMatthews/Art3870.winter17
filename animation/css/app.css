@@ -9,14 +9,18 @@ nav {
   /*background-color: #E8340C;*/
   display: inline;
   width: 240px;
-  margin-left: 500px;
+  margin-left: 790px;
 }
 
 div {
   margin-left: 500px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 div text {
-  text-align: center;
+padding-right: -250px;
+}
+
+div paragraph {
+
 }
