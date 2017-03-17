@@ -66,6 +66,20 @@ header {
   left: 320px;
 }
 
+#about {
+  position: absolute;
+  left: 150px;
+  top: 300px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+#references {
+  position: absolute;
+  left: 150px;
+  top: 500px;
+  font-family: 'Architects Daughter', cursive;
+}
+
 @keyframes butterfly {
   100% {background-position: -500px; }
 }
